@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgb(95, 0, 120),
+      rgb(50, 0, 100));
+}
+
+
+.box {
+  color: antiquewhite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 450px;
+  width: 50%;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(95, 0, 120);
+  outline: none;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 100%;
+}
+
+.inputUser:focus~.labelInput {
+  top: -20px;
+  font-size: 10px;
+}
+
+.inputUser:valid~.labelInput {
+  top: -20px;
+  font-size: 10px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+/* é importante colocar a div externa à div dos inputs 
+com position relative para que a label 
+fique dentro da div dos inputs
+*/
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+
+
+fieldset {
+  border: solid 3px rgb(95, 0, 120);
+}
+
+legend {
+  text-align: center;
+  border: solid 3px rgb(95, 0, 120);
+  border-radius: 15px;
+  background-color: rgb(95, 0, 120);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.btnSubmit {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.submit {
+  width: 100%;
+  color: antiquewhite;
+  font-size: larger;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgb(95, 0, 120),
+      rgba(50, 0, 100, 0.663));
+  ;
+}
+
+.submit:hover {
+  background-image: linear-gradient(to right, rgb(95, 0, 120),
+      rgba(50, 0, 100, 0.463));
+  ;
+}
+
+#ano_nascimento {
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  outline: none;
+}
