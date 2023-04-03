@@ -1,0 +1,26 @@
+.fightarea {
+    display: flex;
+    gap: 10px;
+}
+
+#char, #freak  {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius:3px;
+}
+
+.lifebar .bar {
+    height: inherit; /* Faz com .bar herde a altura de .lifebar */
+    background-color: red;
+    border-radius: 3px;
+}
+
+.log{
+    border: 1px dotted #999;
+    height: 250px;
+    overflow-y: scroll;
+}
