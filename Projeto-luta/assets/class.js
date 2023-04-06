@@ -24,7 +24,7 @@ class Character {
 class Knight extends Character {
     constructor(name) {
         super(name); //chama o contrutor (Character)
-        this.life = 100;
+        this.life = 100; //newLife
         this.attack = 10;
         this.defense = 8;
         this.maxLife = this.life;
@@ -33,7 +33,7 @@ class Knight extends Character {
 class Wizard extends Character {
     constructor(name) {
         super(name); //chama o contrutor (Character)
-        this.life = 100;
+        this.life = 100; //newLife
         this.attack = 13;
         this.defense = 2;
         this.maxLife = this.life;
@@ -44,7 +44,7 @@ class Wizard extends Character {
 class Monster extends Character {
     constructor() {
         super('Monstro');
-        this.life = 80;
+        this.life = 80; //newLife
         this.attack = 12;
         this.defense = 8;
         this.maxLife = this.life;
@@ -53,7 +53,7 @@ class Monster extends Character {
 class Haunt extends Character {
     constructor() {
         super('Assombração')
-        this.life = 150;
+        this.life = 150; //newLife
         this.attack = 7;
         this.defense = 5;
         this.maxLife = this.life;
@@ -100,7 +100,7 @@ class Stage {
         let actualDefense = attacked.defense * defenseFactor.toFixed();
 
         if (actualAttack > actualDefense) {
-            attacked.life -= actualAttack;
+            attacked.life = attacked.life - actualAttack; //newLife
             this.log.addMessage(`${attacking.name} deu ${actualAttack} de dano em ${attacked.name}`)
         } else {
             this.log.addMessage('Conseguiu defender...')
