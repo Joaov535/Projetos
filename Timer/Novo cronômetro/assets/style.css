@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(to left, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.9));
+}
+
+.displayArea {
+    background-color: rgba(255, 255, 0, 0.907);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.511);
+    border: double 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.display,
+.buttons {
+    font-size: xx-large;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.display {
+    width: 100%;
+    font-size: 100px;
+}
+
+#start,
+#pause,
+#reset {
+    width: 75px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
